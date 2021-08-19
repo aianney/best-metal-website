@@ -1,0 +1,35 @@
+.img {
+    display: block;
+    cursor: pointer;
+}
+
+.container-portfolio-section {
+    width: 100%;
+    height: 1250px;
+    margin-bottom: -20px;
+    margin-top: 35px;
+}
+
+.container-portfolio-section .selected {
+    width: 450px;
+    height: 350px;
+    margin: 0 auto; 
+    border: 4px solid #fd511f;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+
+.container-portfolio-section .imgContainer-PortfolioSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 0 0;
+    justify-content: center;
+}
+
+.container-portfolio-section .imgContainer-PortfolioSection img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
