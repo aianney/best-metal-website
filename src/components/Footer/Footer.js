@@ -18,7 +18,7 @@ function Footer() {
             <Link to='/'>RESOURCES</Link>
             <Link to='/'>PORTFOLIO</Link>
             <Link to='/'>CONTACT</Link>
-            <Link to='/sign-up'>Sign Up</Link>
+            {/* <Link to='/sign-up'>Sign Up</Link> */}
           </div>
           <div className='footer-paragraph-items2'>
             <h2>LOCATION</h2>
@@ -41,16 +41,16 @@ function Footer() {
           <div className='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
+            <Link to='https://www.facebook.com/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
           </div>
         </div>
       </div>
-      <section className='social-media'>
+      {/* <section className='social-media'>
         <div className='social-media-wrap'>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

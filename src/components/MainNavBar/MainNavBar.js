@@ -6,13 +6,8 @@ import { GiMetalPlate } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineBars } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
+import SecondaryNav from "../SecondaryNav/SecondaryNav";
 
-import { TiSocialFacebook } from "react-icons/ti";
-import { TiSocialPinterest } from "react-icons/ti";
-import { TiSocialTwitter } from "react-icons/ti";
-import { TiSocialGooglePlus } from "react-icons/ti";
-import { TiSocialInstagram } from "react-icons/ti";
-import { IoCall } from "react-icons/io5";
 
 function MainNavbar() {
 	const [click, setClick] = useState(false);
@@ -121,16 +116,7 @@ function MainNavbar() {
 							</li>
 						</ul>
 					</div>
-					<div className="secondarynav-icons">
-						<IoCall className="number-icon" />
-						1-888-892-
-						<h2 className="best">BEST</h2>
-						<TiSocialGooglePlus />
-						<TiSocialTwitter />
-						<TiSocialFacebook />
-						<TiSocialPinterest />
-						<TiSocialInstagram />
-					</div>
+					<SecondaryNav/>
 				</nav>
 			</IconContext.Provider>
 		</>
