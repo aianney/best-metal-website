@@ -31,10 +31,11 @@
 	color: #fd511f;
 	justify-self: start;
 	cursor: pointer;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
+	margin-bottom: -16px;
 }
 
 .main-navbar-icon {
@@ -48,7 +49,8 @@
 	list-style: none;
 	text-align: center;
 	justify-content: flex-end;
-	margin-right: -45px;
+	margin-right: -140px;
+	margin-top: 15px;
 }
 
 .main-nav-item {
@@ -77,6 +79,24 @@
 
 .main-menu-icon {
 	display: none;
+}
+
+a.main-nav-links {
+	color:white;
+	text-decoration: none !important;
+
+}
+
+a.main-nav-links:hover{
+	color: #fd511f;
+}
+
+a.main-navbar-logo{
+	color:white;
+}
+
+a.main-navbar-logo:hover{
+	color:#fd511f;
 }
 
 @media screen and (max-width: 960px) {
@@ -119,6 +139,7 @@
 
 	.main-nav-item:hover {
 		border: none;
+		background: none;
 	}
 
 	.main-nav-item {

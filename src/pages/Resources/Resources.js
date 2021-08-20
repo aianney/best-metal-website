@@ -1,7 +1,7 @@
 import React from 'react'
 import ResourcesOrangeBorder from '../../components/ResourcesPage/ResourcesOrangeBorder'
 import ResourcesPage from '../../components/ResourcesPage/ResourcesPage'
-import ResourcesSectionOne from '../../components/Sections/ResourcesSections/ResourcesSectionOne'
+import ResourcesSection from '../../components/Sections/ResourcesSections/ResourcesSection'
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
@@ -10,7 +10,7 @@ const Resources = () => {
         <div>
             <ResourcesPage/>
             <ResourcesOrangeBorder/>
-            <ResourcesSectionOne/>
+            <ResourcesSection/>
             <ContactForm />
             <Footer/>
         </div>
