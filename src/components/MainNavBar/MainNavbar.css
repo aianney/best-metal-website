@@ -191,5 +191,6 @@ a.main-navbar-logo:hover{
 .best {
 	color: #fd511f;
 	font-size: 20px;
+	margin-bottom: -1px;
 }
 

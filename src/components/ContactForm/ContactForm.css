@@ -146,15 +146,14 @@ form {
 
 .submit-btn {
   background-color: #fd511f;
-  /* background-color: var(--dark); */
   color: white !important;
-  /* color: var( --orangered) !important; */
   padding: 8px 50px;
   border: 2px solid #21ce99;
   border: 2px solid var( --orangered);
   border-radius: 10px;
   margin-bottom: 25px;
   float: right;
+  margin-right: 13px;
 }
 
 .submit-btn:hover {
