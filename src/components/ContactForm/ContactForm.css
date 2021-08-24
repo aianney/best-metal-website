@@ -80,6 +80,12 @@ form {
   border: none;
   color: #fd511f;
   color: var( --orangered);
+  margin: 20px;
+}
+
+select.form-control[multiple], select.form-control[size], textarea.form-control {
+  height: 180px;
+  margin-top: -5px;
 }
 
 .formInput:focus {
@@ -153,7 +159,7 @@ form {
   border-radius: 10px;
   margin-bottom: 25px;
   float: right;
-  margin-right: 13px;
+  margin-right: -8px;
 }
 
 .submit-btn:hover {

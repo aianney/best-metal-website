@@ -29,6 +29,10 @@
     text-align: left;
     padding: 8px;
   }
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 0px;
+}
   
   /* .td {
     border: 1px solid #dddddd;

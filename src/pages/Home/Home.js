@@ -14,8 +14,8 @@ function Home() {
     <>
       <HeroSection/><br/>
       <OrangeBorderTextW/>
-      <SectionOneHome/>
-      <ShopNowText/>
+      <SectionOneHome/> <br/>
+      <ShopNowText/> 
       <ContactForm/>
       <Footer/>
     </>
