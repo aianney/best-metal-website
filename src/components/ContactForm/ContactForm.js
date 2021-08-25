@@ -30,12 +30,13 @@ const ContactForm = () => {
 	// Function called on submit that uses emailjs to send email of valid contact form
 	const onSubmit = async (data) => {
 		// Destrcture data object
-		const { name, email, subject, message } = data;
+		const { name, email, lastname, phonenumber, message } = data;
 		try {
 			const templateParams = {
 				name,
 				email,
-				subject,
+				lastname,
+				phonenumber,
 				message,
 			};
 
@@ -95,11 +96,11 @@ const ContactForm = () => {
 												)}
 												<input
 													type="text"
-													name="name"
-													{...register("name", {
+													name="lastname"
+													{...register("lastname", {
 														required: {
 															value: true,
-															message: "Please enter your name",
+															message: "Please enter your lastname",
 														},
 														maxLength: {
 															value: 30,
@@ -107,11 +108,11 @@ const ContactForm = () => {
 														},
 													})}
 													className="form-control formInput"
-													placeholder="Email Address"
+													placeholder="Last Name"
 												></input>
-												{errors.name && (
+												{errors.lastname && (
 													<span className="errorMessage">
-														{errors.name.message}
+														{errors.lastname.message}
 													</span>
 												)}
 											</div>
@@ -125,7 +126,7 @@ const ContactForm = () => {
 															/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
 													})}
 													className="form-control formInput"
-													placeholder="Last Name"
+													placeholder="Email Address"
 												></input>
 												{errors.email && (
 													<span className="errorMessage">
@@ -133,19 +134,19 @@ const ContactForm = () => {
 													</span>
 												)}
 												<input
-													type="email"
-													name="email"
-													{...register("email", {
+													type="phonenumber"
+													name="phonenumber"
+													{...register("phonenumber", {
 														required: true,
 														pattern:
-															/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+															/^[7-9]{1}[0-9]{9}/,
 													})}
 													className="form-control formInput"
 													placeholder="Phone Number"
 												></input>
-												{errors.email && (
+												{errors.phonenumber && (
 													<span className="errorMessage">
-														Please enter a valid email address
+														Please enter a valid phone number
 													</span>
 												)}
 											</div>

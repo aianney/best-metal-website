@@ -62,6 +62,9 @@ form {
 .formRow {
   margin: 10px 0 20px 0;
 }
+.h2, h2 {
+  font-size: 1.5rem;
+}
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
